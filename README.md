@@ -19,7 +19,8 @@ The files are available in this repo, with changed access rights so that git can
 Install git with 
 sudo apt-get install git
 
-Cool trick: Press Alt+ Left/Right arrow key to access more tty's
-
+Some useful trick: 
+Press Alt+ Left/Right arrow key to access more tty's
+Power off with sudo shutdown -h now
 
 
