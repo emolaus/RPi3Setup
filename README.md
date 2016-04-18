@@ -9,23 +9,25 @@ http://www.instructables.com/id/Boot-the-Raspberry-Pi-from-USB/step5/Set-to-Boot
 NOTE! This fails after a few times and then I have to reflash the USB stick.
 I skipped setting the sd card flag and erase the memory. Actually I burned the same image onto it and just edited the file where rootfs is set.
 
+Enable ssh, change password, enable autologin...
+
 start with running 
 sudo apt-get update
 sudo apt-get upgrade
 
-Setup automatic WiFi according to:
+Setup automatic WiFi and static IP address according to:
 http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/
-The files are available in this repo, with changed access rights so that git can add them. Original access rights documented in folder.
+The files are available in this repo, but with changed access rights so that git can add them. Original access rights documented in folder.
 
 
 Install git with 
 sudo apt-get install git
+Install sqlite3, nodejs, tmux
 
-Install sqlite3 same way
 
-
-Some useful trick: 
+Some useful commands: 
 Press Alt+ Left/Right arrow key to access more tty's
 Power off with sudo shutdown -h now
+Scan network with mac: sudo nmap -sn 192.168.0/24
 
 
