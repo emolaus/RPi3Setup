@@ -6,4 +6,9 @@ https://www.stewright.me/2013/05/install-and-run-raspbian-from-a-usb-flash-drive
 
 Don't forget to format the USB stick to FAT32.
 
+Setup automatic WiFi according to:
+http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/
+
+
+
 
