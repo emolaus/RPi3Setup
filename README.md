@@ -25,7 +25,9 @@ Install git with
 
 sudo apt-get install git
 
-Install sqlite3, nodejs, npm, tmux
+Install sqlite3, npm, tmux
+Installed node 5 with this instruction:
+https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 
 Some useful commands: 
 Press Alt+ Left/Right arrow key to access more tty's
