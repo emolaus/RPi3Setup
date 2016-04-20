@@ -21,6 +21,10 @@ http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-netw
 
 The files are available in this repo, but with changed access rights so that git can add them. Original access rights documented in folder.
 
+Wrote a script ~bin/resetwlan available in this repo. Checks if connected, if not resets wlan0. Added to cron with line
+
+*/1 * * * * root  /home/username/bin/resetwlan
+
 Install git with 
 
 sudo apt-get install git
