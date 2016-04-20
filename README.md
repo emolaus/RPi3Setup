@@ -23,7 +23,7 @@ The files are available in this repo, but with changed access rights so that git
 
 Wrote a script ~bin/resetwlan available in this repo. Checks if connected, if not resets wlan0. Added to cron with line
 
-*/1 * * * * root  /home/username/bin/resetwlan
+*/1 * * * * root  /home/username/RPi3Setup/bin/resetwlan
 
 Install git with 
 

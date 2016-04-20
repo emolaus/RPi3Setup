@@ -1,0 +1,19 @@
+#!/bin/bash
+
+RES=$(ping -c 1 www.google.com | grep bytes)
+DATE=$(date +"%Y-%m-%d %T")
+if [ -n "$RES" ];
+then
+	#successfully pinged site
+else
+	RES=$(ping -c 1 www.dn.se | grep bytes)
+	if [ -n "$RES" ];
+	then
+		#successfully pinged site
+	else
+		#wlan is probably down
+		echo "$DATE failed pings. Resetting wlan" >> /home/pi/wlanlog
+		ifdown --force wlan0
+		ifup wlan0
+	fi
+fi
