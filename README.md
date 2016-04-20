@@ -33,6 +33,9 @@ Install sqlite3, npm, tmux
 Installed node 5 with this instruction:
 https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 
+Good tmux cheat sheet:
+http://www.dayid.org/comp/tm.html
+
 Some useful commands: 
 Press Alt+ Left/Right arrow key to access more tty's
 
