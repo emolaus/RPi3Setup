@@ -43,3 +43,10 @@ Power off with sudo shutdown -h now
 Scan network with mac: sudo nmap -sn 192.168.0/24
 
 nano /etc/crontab och sedan sudo service cron restart
+
+## TODO
+Add new user
+Move content to new user
+Remove pi from ssh config
+Add new user to ssh config
+Add new user to sudo group 
