@@ -25,12 +25,11 @@ Wrote a script ~bin/resetwlan available in this repo. Checks if connected, if no
 
 */1 * * * * root  /home/username/RPi3Setup/bin/resetwlan
 
-Install git with 
+Install git, sqlite3, tmux with 
 
 sudo apt-get install git
 
-Install sqlite3, npm, tmux
-Installed node 5 with this instruction:
+Installed node 5 and npm with this instruction:
 https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 
 Good tmux cheat sheet:
@@ -42,7 +41,12 @@ Press Alt+ Left/Right arrow key to access more tty's
 Power off with sudo shutdown -h now
 Scan network with mac: sudo nmap -sn 192.168.0/24
 
-nano /etc/crontab och sedan sudo service cron restart
+Wrote script bin/resetwlan which is called every 5 min to check if we need to restart wlan. To schedule:
+nano /etc/crontab followed by sudo service cron restart
+
+Wrote script bin/onstartup which I added to /etc/rc.local. The idea is to start a tmux session to get all stuff visible when logging in with ssh.
+
+
 
 Added new user (in sudo group),
 Remove pi from ssh config,
