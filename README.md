@@ -44,9 +44,9 @@ Scan network with mac: sudo nmap -sn 192.168.0/24
 
 nano /etc/crontab och sedan sudo service cron restart
 
-## TODO
-Add new user
-Move content to new user
+Added new user, in sudo group
 Remove pi from ssh config
 Add new user to ssh config
-Add new user to sudo group 
+http://askubuntu.com/questions/16650/create-a-new-ssh-user-on-ubuntu-server
+
+http://askubuntu.com/questions/334318/sudoers-file-enable-nopasswd-for-user-all-commands
