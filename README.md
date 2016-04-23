@@ -21,9 +21,12 @@ http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-netw
 
 The files are available in this repo, but with changed access rights so that git can add them. Original access rights documented in folder.
 
-Wrote a script ~bin/resetwlan available in this repo. Checks if connected, if not resets wlan0. Added to cron with line
+Wrote a script ~bin/resetwlan available in this repo. Checks if connected, if not resets wlan0. Added this line to /etc/crontab
 
-*/1 * * * * root  /home/username/RPi3Setup/bin/resetwlan
+*/5 * * * * root  /home/username/RPi3Setup/bin/resetwlan
+
+nano /etc/crontab followed by sudo service cron restart
+
 
 Install git, sqlite3, tmux with 
 
@@ -41,16 +44,11 @@ Press Alt+ Left/Right arrow key to access more tty's
 Power off with sudo shutdown -h now
 Scan network with mac: sudo nmap -sn 192.168.0/24
 
-Wrote script bin/resetwlan which is called every 5 min to check if we need to restart wlan. To schedule:
-nano /etc/crontab followed by sudo service cron restart
 
 Wrote script bin/onstartup which I added to /etc/rc.local. The idea is to start a tmux session to get all stuff visible when logging in with ssh.
 
-
-
-Added new user (in sudo group),
-Remove pi from ssh config,
-Add new user to ssh config,
+Added new user (in sudo group - receives ssh login automatically),
+removed pi from ssh config
 
 Instructions:
 http://askubuntu.com/questions/16650/create-a-new-ssh-user-on-ubuntu-server, http://askubuntu.com/questions/334318/sudoers-file-enable-nopasswd-for-user-all-commands
