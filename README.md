@@ -52,3 +52,5 @@ removed pi from ssh config
 
 Instructions:
 http://askubuntu.com/questions/16650/create-a-new-ssh-user-on-ubuntu-server, http://askubuntu.com/questions/334318/sudoers-file-enable-nopasswd-for-user-all-commands
+
+Installing mongodb v. 3.0.9 with these instructions: http://andyfelong.com/2016/01/mongodb-3-0-9-binaries-for-raspberry-pi-2-jessie/
